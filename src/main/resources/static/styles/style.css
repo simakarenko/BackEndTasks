@@ -1,0 +1,234 @@
+:root{
+    --font-poppins:'Poppins', sans-serif;
+    --font-avenir:'Avenir LT Pro', sans-serif;
+    --color-white:#FFF; 
+    --color-black:#333;
+    --color-gray:#666;                                           
+}
+
+.login-background{
+    background: url(/img/login-background.png);
+    height: 120vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login{
+    font-family: var(--font-poppins);
+    background: var(--color-white);
+    width: 50%;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.sign-in{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 75%;
+}
+
+.login>img{
+    margin: 40px 0px 24px 0px;
+    width: 70px;
+}
+
+.button-close{
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    border: none;
+    background: none;
+    color: var(--color-black);
+    font-size: 20px;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+.button-close:hover{
+    background: var(--color-black);;
+    color: var(--color-white);
+}
+
+.login h1{
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.sign-up{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: var(--color-gray);
+}
+
+.underline-button{
+    font-family: var(--font-poppins);
+    border: none;
+    background: none;
+    font-size: 16px;
+    text-decoration: underline;
+    padding: 0px 5px;
+    color: var(--color-black);
+}
+
+.social-button{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    border-radius: 40px;
+    border: 1px solid #333;
+    background: none;
+    font-family: var(--font-avenir);
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    padding: 20px 0px;
+    color: var(--color-black);
+    transition: all 0.4s;
+}
+
+.social-button:hover{
+    background: var(--color-black);
+    color: var(--color-white);
+}
+
+.social-button img{
+    margin: 0px;
+    width: 32px;
+}
+
+.or{
+    font-size: 24px;
+    font-family: var(--font-avenir);
+    color: var(--color-gray);
+    text-transform: uppercase;
+    margin-top: 24px;
+    position: relative;
+}
+.or::before, .or::after{
+    content: "";
+    display: block;
+    clear: both;
+    width: 100px;
+    height: 2px;
+    border-radius: 10px;
+    background:  var(--color-gray);
+    position: absolute;
+    top: 40%;
+}
+
+.or::before{
+    right: 50px;
+}
+
+.or::after{
+    left: 50px;
+}
+
+form input{
+    border-radius: 12px;
+    border: 1px solid var(--color-gray);
+    width: 100%;
+    padding: 20px 10px;
+    margin: 5px 0px 0px 0px;
+    font-size: 20px;
+    font-family: var(--font-poppins);
+    outline: none;
+}
+
+form label{
+    align-self: flex-start;
+    margin-top: 20px;
+}
+
+form .underline-button{
+    align-self:flex-end;
+    margin-top: 5px;
+}
+
+label button{
+    /* display: flex;
+    align-items: center; */
+    font-family: var(--font-poppins);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-gray);
+    border: none;
+    background: none;
+}
+
+label>button>img{
+    margin-right: 8px;
+}
+
+.login-button{
+    border-radius: 40px;
+    color: var(--color-white);
+    background: var(--color-black);
+    width: 77%;
+    margin: 24px 0px 40px 0px;
+    padding: 15px 0px 16px 0px;
+    font-family: var(--font-poppins);
+    font-size: 22px;
+    font-weight: 500;
+    border: 1px solid var(--color-black);
+    transition: all 0.4s;
+}
+
+.login-button:hover{
+    color: var(--color-black);
+    background: none;
+}
+.success{
+    border: 1px solid rgb(0, 204, 0);
+}
+
+.error{
+    border: 1px solid red;
+}
+
+@media (max-width:800px) {
+    .login{
+        width:70%;
+    }
+    form label{
+        align-self:center;
+    }
+    form input{
+        text-align: center;
+    }
+    form .underline-button{
+        align-self:center;
+    }
+}
+
+@media (max-width:600px) {
+    .login{
+        width:80%;
+    }
+    .or::before, .or::after{
+        width: 60px;
+    }
+}
+
+/* .display-hide{
+    display: none;
+} */

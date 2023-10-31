@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task manager</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/avenir-lt-pro" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+    <div class="login-background">
+        <div class="login">
+            <img src="/img/logo.png" alt="">
+            <button class="button-close"><i class="fa-solid fa-xmark"></i></button>
+            <h1>Log in</h1>
+            <p class="sign-up"> Don’t have an acount? <button class="underline-button">Sign up</button> </p>
+            <button class="social-button"><img src="/img/facebook.svg" alt=""> Continue with Facebook</button>
+            <button class="social-button"><img src="/img/google.svg" alt=""> Continue with Google</button>
+            <p class="or">or</p>
+            <form action="">
+                <label for="username">Your user name</label>
+                <input type="text" name="" id="username" required>
+                <label for="password">Your password <button><img src="/img/eye.svg" alt="">Hide</button></label>
+                <input type="password" name="" id="password" required>
+                <button class="underline-button">Forget your password?</button>
+            </form>
+            <button class="login-button">Log in</button>
+        </div>
+    </div>
+    <script src="/code/login.js"></script>   
+</body>
+
+</html>
